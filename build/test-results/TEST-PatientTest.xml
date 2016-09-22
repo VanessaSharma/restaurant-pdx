@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PatientTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-09-22T22:32:31" hostname="epicodus-1.local" time="0.038">
+  <properties/>
+  <testcase name="getBirthday_instantiatesWithBirthday_String" classname="PatientTest" time="0.005"/>
+  <testcase name="patient_instantiatesCorrectly_true" classname="PatientTest" time="0.006"/>
+  <testcase name="getPatitentId_PatientInstantiatesWithId_1" classname="PatientTest" time="0.005"/>
+  <testcase name="getName_instantiatesWithName_String" classname="PatientTest" time="0.006"/>
+  <testcase name="save_assignsIdToObject" classname="PatientTest" time="0.015"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,46 @@
+<h1>Welcome to the Cuisines Office</h1>
+
+<h2>All cuisines:</h2>
+
+#if($cuisines)
+  <p>Click on a cuisine to see the patients</p>
+  <ul>
+    #foreach ($cuisine in $cuisines)
+      <li><a href="/cuisines/$cuisine.getId()">$cuisine.getType()</a></li>
+    #end
+  </ul>
+#else
+  <p>There are no cuisines</p>
+#end
+
+<h2>New Cuisine:</h2>
+<form action="/cuisines" method="post">
+
+  <label for="type">Cuisine name</label>
+  <input id="type" name="type" type="text">
+
+  <button type="submit" class="btn btn-success">Add Cuisine</button>
+</form>
+
+<h2>New Restaurant:</h2>
+<form action="/restaurants" method="post">
+  <label for="cuisineId">Select a cuisine:</label>
+  <select id='cuisineId' name='cuisineId' type='text'>
+    #foreach($cuisine in $cuisines)
+      <option value="$cuisine.getId()">$cuisine.getName()</option>
+    #end
+  </select>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input id="name" name="name" type="text" class="form-control">
+
+    <label for="rating">Rating:</label>
+    <input id="rating" name="rating" type="text" class="form-control">
+
+    <label for="price">Price:</label>
+    <input id="price" name="price" type="text" class="form-control">
+
+  </div>
+
+  <button type="submit" class="btn btn-success">Add Task</button>
+</form>

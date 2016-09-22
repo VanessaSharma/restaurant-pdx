@@ -1,0 +1,19 @@
+<h1>$restaurant.getName()</h1>
+<h2>Belongs to: $cuisine.getType() list.</h2>
+
+<h2>Edit restaurant: </h2>
+
+<form action="/cuisines/$restaurant.getCuisineId()/restaurants/$restaurant.getId()" method="post">
+  <label for="name">Name:</label>
+  <input id="name" name="name" type="text">
+
+  <label for="rating">Rating:</label>
+  <input id="rating" name="rating" type="text">
+
+  <label for="price">Price:</label>
+  <input id="price" name="price" type="text">
+
+  <button type="submit" class="btn btn-info">Update restaurant</button>
+</form>
+
+<a href="/cuisines/$cuisine.getId()">Return to $cuisine.getType()</a>

@@ -1,0 +1,18 @@
+<h1>Add a restaurant to $cuisine.getName()</h1>
+
+<form action="/restaurants" method="post">
+  <input id="cuisineId" name="cuisineId" type="hidden" value="$cuisine.getId()">
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" class="form-control" required>
+
+    <label for="rating">Rating</label>
+    <input id="rating" name="rating" type="date" class="form-control" required>
+
+    <label for="price">Price</label>
+    <input id="price" name="price" type="date" class="form-control" required>
+  </div>
+
+  <button type="submit" class="btn btn-success">Add Patient</button>
+</form>
